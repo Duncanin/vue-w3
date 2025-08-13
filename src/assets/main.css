@@ -1,0 +1,62 @@
+/* 引入 JavaScript 配置（如果有需要使用 tailwind.config.js） */
+@config "../../tailwind.config.js";
+@import 'tailwindcss';
+
+@theme {
+  /* --color-*: initial; */
+  --color-white: #FFFFFF;
+  --color-black: #333333;
+  --color-primary: #FFD370;
+  --color-gray: #9F9A91;
+  --color-gray-light: #EFEFEF;
+  --color-red: #D87355;
+
+  --font-heading: 'Baloo Thambi 2','Noto Sans TC';
+}
+
+
+@layer base {
+  * {
+    /* outline: red solid 1px; */
+  }
+  body {
+    font-family: var(--font-heading, ui-sans-serif, system-ui, sans-serif);
+    @apply text-black;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+  }
+}
+
+
+
+/* @import './base.css';
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
